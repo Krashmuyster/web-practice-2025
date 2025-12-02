@@ -8,6 +8,9 @@
     justify-content: space-between;
     height: 100%;
   }
+  &__button {
+    max-width: 100px;
+  }
   &__logo {
     font-size: 1.5rem;
     font-weight: 700;
