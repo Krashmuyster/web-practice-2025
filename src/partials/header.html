@@ -1,3 +1,24 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="container">
+    <!-- Логотип -->
+    <a href="#" class="header__logo">FURNITURE.ID</a>
+
+    <!-- Кнопка-бургер (сниппет g-burger) -->
+    <button class="btn-reset burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            data-burger>
+      <span class="burger__line"></span>
+    </button>
+
+    <!-- Навигация (обязательно с data-menu) -->
+    <nav class="header__nav" data-menu>
+      <ul class="header__list">
+        <li><a href="#main" class="header__link" data-menu-item>Product</a></li>
+        <li><a href="#about" class="header__link" data-menu-item>Testimonial</a></li>
+        <li><a href="#services" class="header__link" data-menu-item>About</a></li>
+        <li><a href="#contacts" class="header__link" data-menu-item>Blog</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

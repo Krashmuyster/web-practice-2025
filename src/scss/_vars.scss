@@ -8,5 +8,18 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --light-color: #fff;
+  $primary-color: #ff6b35;
+  $primary-hover: darken($primary-color, 10%);
+  $dark-color: #2d2d2d;
+  $light-color: #f8f9fa;
+  $border-color: #e0e0e0;
+
+  // fonts
+  $font-main: 'Montserrat', sans-serif;
+  $font-size-base: 16px;
+
+  // indentation
+  $gap-sm: 0.5rem;
+  $gap-md: 1rem;
+  $gap-lg: 2rem;
 }
