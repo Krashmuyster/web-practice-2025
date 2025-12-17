@@ -1,0 +1,235 @@
+.about {
+    padding: 100px 50px;
+    background-color: #000000;
+  &-header {
+    display: flex;
+    flex-direction: column;
+  }
+  &-header h2 {
+    text-align: left;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  &-header h1{
+    text-align: left;
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  &-header p{
+    text-align: left;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+
+  &-container {
+      margin: -10 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+  }
+
+  &-content h2 {
+      font-size: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      font-weight: 500;
+  }
+
+  &-content h1 {
+      font-size: 48px;
+      color: #ffffff;
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 30px;
+  }
+
+  &-content h1 span {
+      display: block;
+      font-weight: 700;
+  }
+
+  &-content p {
+      margin-top: 75px;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 1.8;
+      margin-bottom: 40px;
+  }
+
+  &-name {
+      color: #ffffff;
+      font-weight: 600;
+  }
+
+  &-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 50px;
+  }
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+
+  &-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #2c3e50;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 100px;
+  }
+
+  &-icon1 {
+    width: 24px;
+    height: 24px;
+    background-color: #2c3e50;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 10px;
+  }
+
+  &-content h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 600;
+    padding: 10px;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  &-content-quality {
+    background-image: url("../img/svg/quality.svg");
+  }
+
+  &-content-sustainability {
+    background-image: url("../img/svg/Sustainability.svg");
+  }
+
+  &-content-innovation {
+    background-image: url("../img/svg/Innovation.svg");
+  }
+
+  &-content-customer {
+    background-image: url("../img/svg/Customer.svg");
+  }
+
+  &-content1 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  &-content-arrow {
+    padding-left: 0 !important;
+    margin-right: 120px;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+  }
+  &-link {
+    transition: 0.2s ease;
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+  &-grid {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+
+  &-item {
+      text-align: center;
+  }
+
+  &-number {
+      font-size: 48px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 10px;
+  }
+
+  &-label {
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 500;
+  }
+}
+
+.about-image {
+    background-image: url('../img/svg/Шкаф.jpg');
+    background-size: cover;
+    min-height: 1000px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 18px;
+    min-width: 50%;
+    @include small-tablet {
+      width: 100%;
+      min-height: 500px;
+    }
+}
+
+.about-image1 {
+    background-size: cover;
+    min-height: 1000px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 18px;
+    min-width: 50%;
+    @include small-tablet {
+      width: 100%;
+      min-height: 500px;
+    }
+}
+.about-container {
+  display: flex;
+  align-items: stretch;
+  @include small-tablet {
+    flex-direction: column-reverse;
+  }
+}
+
+.about-header {
+  order: 1;
+  height: auto;
+}

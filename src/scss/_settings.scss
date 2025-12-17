@@ -20,7 +20,7 @@
 
 img {
   height: auto;
-  max-width: 100%;
+  max-width: 92%;
   object-fit: cover;
 }
 
@@ -97,4 +97,18 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 32px;
 }
